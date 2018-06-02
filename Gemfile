@@ -19,6 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery'
 gem 'video_info'
 gem 'bootstrap'
+gem 'devise'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
