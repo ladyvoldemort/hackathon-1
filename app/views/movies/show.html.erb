@@ -1,8 +1,15 @@
-<h1>Movie Info:</h1>
+<div class="container-fluid">
+    <h1>Movie Title: <%= @movie.title %></h1>
 
-<%= @movie.title %>
-<%= @movie.duration %>
-<%= @movie.genre %>
-<%= @movie.description %>
-<%= @movie.trailer %>
+    <h2>Genre: <%= @movie.genre %></h2>
+    <h2>Movie Duration: <%= @movie.duration %></h2>
+    
+    <div>IMDB Movie Description: <%= link_to @movie.description %></div>
 
+    <br>    
+    <div class="col-md-12 embed-responsive embed-responsive-16by9 ">
+    <iframe src= "<%= @movie.trailer %>"</iframe>
+    </div>
+
+    
+</div>
