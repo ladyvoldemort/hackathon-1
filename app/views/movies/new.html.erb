@@ -1,2 +1,25 @@
-<h1>Movies#new</h1>
+<h1>Utoob</h1>
+<h2 class="center">Movies</h2>
+<hr />
+<div class="row">
+  <div class="col s12 m6">
+     <button class="btn" id="toggle">Show Form</button>
+    <ul id="movie-list"> 
+      <% @movies.each do |movie| %>
+        <li
+          class="movie-item"
+          data-id= <%= movie.id %>
+          movie-name= "<%= movie.name %>"
+        >
+          <%= movie.name %> - <%= movie.description %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="col s12 m6" id="character-list">
+    <h2 id="movie">Characters in movie</h2> 
+    <ul id="charcters"></ul>
+  </div>
+</div>
+
 <p>Find me in app/views/movies/new.html.erb</p>
