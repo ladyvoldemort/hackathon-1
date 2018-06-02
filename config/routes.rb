@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-root to: 'accounts#index'
-devise_for :users
+  root "movies#index"
+  devise_for :users
 
-resources :accounts
+  resources :movies
 end
