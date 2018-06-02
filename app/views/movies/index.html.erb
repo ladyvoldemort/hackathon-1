@@ -4,7 +4,7 @@
 <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 <div class="row">
   <div class="col-md-12">
-     <button class="btn" id="toggle">Show Form</button>
+     <%= link_to 'Add a Movie', new_movie_path %>
     <ul id="movie-list"> 
       <% @movie.each do |movie| %>
         <li
