@@ -1,0 +1,20 @@
+<div id="movie-form">
+  <%= form_for @movie do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :duration %>
+    <%= f.text_field :duration %>
+
+     <%= f.label :genre %>
+    <%= f.text_field :genre %>
+
+     <%= f.label :description %>
+    <%= f.text_field :description %>
+
+     <%= f.label :trailer %>
+    <%= f.text_field :trailer %>
+
+    <%= f.submit %>
+  <% end %>
+</div>

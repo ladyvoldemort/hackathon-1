@@ -10,6 +10,7 @@ class MoviesController < ApplicationController
 
   def new
     @movie = Movie.new
+    render partial: "form"
   end
 
   def create
@@ -30,11 +31,18 @@ class MoviesController < ApplicationController
   end
 
   def edit
+    render partial: "form"
+
   end
 
   def destroy
     @movie.destroy
     render json: { message: 'removed' }, status: :ok
+  end
+
+  def form
+    @movie = Movie.new
+    render partial: 'form'
   end
 
   private
