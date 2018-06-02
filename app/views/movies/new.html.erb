@@ -12,6 +12,9 @@
           movie-name= "<%= movie.name %>"
         >
           <%= movie.name %> - <%= movie.description %>
+        <button class="btn" id="imdb"
+       <%= link_to  "imdblink", movie.description %>
+        >IMDB</button>
         </li>
       <% end %>
     </ul>
