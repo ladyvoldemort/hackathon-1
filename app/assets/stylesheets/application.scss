@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+@import 'bootstrap';
+
+body {
+  font-family: Righteous;
+  background-image: url(blur.png);
+  background-repeat: no-repeat;        
+  position: relative;        
+  width: 85%;            
+  height: 610px;       
+  margin-left: auto;      
+  margin-right: auto;
+}
+
+a {
+	color: white;
+	padding: 50px 30px 50px 30px;
+	margin: 20px;
+	font-size: 20pt;
+	text-decoration: none;
+}
+
+a:active {
+	color: white;
+}
+
+a:hover {
+	color: aquamarine;
+	font-size: 250%;
+}

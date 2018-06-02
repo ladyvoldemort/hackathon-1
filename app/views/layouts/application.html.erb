@@ -7,6 +7,9 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+</style>
   </head>
 
   <body>
@@ -14,6 +17,8 @@
      <% flash.each do |key, value| %>
        <div class="alert alert-<%= key %>"><%= value %></div>
      <% end %>
+
+         <%= render 'layouts/navbar' %>
     <%= yield %>
   </body>
 </html>
