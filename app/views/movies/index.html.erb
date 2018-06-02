@@ -1,9 +1,9 @@
 <h1>UtOOb</h1>
-<h2 class="center">Movies</h2>
+<h2>Movies</h2>
 <hr />
 <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 <div class="row">
-  <div class="col s12 m6">
+  <div class="col-md-12">
      <button class="btn" id="toggle">Show Form</button>
     <ul id="movie-list"> 
       <% @movie.each do |movie| %>
@@ -12,7 +12,7 @@
           data-id= <%= movie.id %>
           movie-name= "<%= movie.title %>"
         >
-          <%= movie.title %><a href="<%= movie_path(movie) %>">
+          <%= link_to movie.title, movie_path(movie) %>
 
         </li>
       <% end %>
